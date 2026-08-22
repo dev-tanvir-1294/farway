@@ -1,0 +1,583 @@
+# Copyright (C) 2026 Md.Tanvir Ahmed
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Farway 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/farway\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-22T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Farway theme\n"
+
+#: functions.php
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php
+msgid "Outline"
+msgstr ""
+
+#: functions.php
+msgid "Travel promo"
+msgstr ""
+
+#: functions.php
+msgid "A heading and paragraph with a call-to-action button for travel offers."
+msgstr ""
+
+#: functions.php
+msgid "Wander further, book with certainty."
+msgstr ""
+
+#: functions.php
+msgid "Real availability and transparent pricing on every departure."
+msgstr ""
+
+#: functions.php
+msgid "Find trips"
+msgstr ""
+
+#: functions.php
+msgid "Footer"
+msgstr ""
+
+#: functions.php
+msgid "Destinations"
+msgstr ""
+
+#: functions.php
+msgid "Trips"
+msgstr ""
+
+#: functions.php
+msgid "Stories"
+msgstr ""
+
+#: functions.php
+msgid "Sign in"
+msgstr ""
+
+#: functions.php
+msgid "Dhaka, BD"
+msgstr ""
+
+#: functions.php
+msgid "Cox’s Bazar, BD"
+msgstr ""
+
+#: functions.php
+msgid "New York, USA"
+msgstr ""
+
+#: functions.php
+msgid "London, UK"
+msgstr ""
+
+#: functions.php
+msgid "Dubai, AE"
+msgstr ""
+
+#: functions.php
+msgid "Singapore, SG"
+msgstr ""
+
+#: functions.php
+msgid "Bangkok, TH"
+msgstr ""
+
+#: functions.php
+msgid "Kuala Lumpur, MY"
+msgstr ""
+
+#: functions.php
+msgid "2–4 days"
+msgstr ""
+
+#: functions.php
+msgid "5–7 days"
+msgstr ""
+
+#: functions.php
+msgid "8–14 days"
+msgstr ""
+
+#: functions.php
+msgid "Trip"
+msgstr ""
+
+#: functions.php
+msgid "Featured"
+msgstr ""
+
+#: functions.php
+msgid "/ person"
+msgstr ""
+
+#: functions.php
+msgid "View trip"
+msgstr ""
+
+#: functions.php
+msgid "Destination"
+msgstr ""
+
+#: functions.php
+msgid "Please provide your name and a valid email address."
+msgstr ""
+
+#: functions.php
+msgid "New trip inquiry from %s"
+msgstr ""
+
+#: functions.php
+msgid "General inquiry"
+msgstr ""
+
+#: functions.php
+msgid "Inquiry from %s"
+msgstr ""
+
+#: functions.php
+msgid "Sorry, your inquiry could not be sent. Please try again."
+msgstr ""
+
+#: functions.php
+msgid "Thanks! Your inquiry is on its way. We will be in touch shortly."
+msgstr ""
+
+#: header.php
+msgid "Primary"
+msgstr ""
+
+#: header.php
+msgid "Toggle menu"
+msgstr ""
+
+#: footer.php
+msgid "One search across 4,200 verified trip operators worldwide — real availability, transparent pricing, no surprise fees at checkout."
+msgstr ""
+
+#: footer.php
+msgid "Explore"
+msgstr ""
+
+#: footer.php
+msgid "FAQ"
+msgstr ""
+
+#: footer.php
+msgid "Contact"
+msgstr ""
+
+#: footer.php
+msgid "All rights reserved."
+msgstr ""
+
+#: front-page.php
+msgid "Departures open"
+msgstr ""
+
+#: front-page.php
+msgid "Wander further,"
+msgstr ""
+
+#: front-page.php
+msgid "book with"
+msgstr ""
+
+#: front-page.php
+msgid "certainty."
+msgstr ""
+
+#: front-page.php
+msgid "Operators listed"
+msgstr ""
+
+#: front-page.php
+msgid "Avg. saved vs. retail"
+msgstr ""
+
+#: front-page.php
+msgid "Trips booked today"
+msgstr ""
+
+#: front-page.php
+msgid "Best fare, verified"
+msgstr ""
+
+#: front-page.php
+msgid "Boarding pass — search"
+msgstr ""
+
+#: front-page.php
+msgid "Book a trip"
+msgstr ""
+
+#: front-page.php
+msgid "From"
+msgstr ""
+
+#: front-page.php
+msgid "Choose departure"
+msgstr ""
+
+#: front-page.php
+msgid "To"
+msgstr ""
+
+#: front-page.php
+msgid "ANY"
+msgstr ""
+
+#: front-page.php
+msgid "Open destination"
+msgstr ""
+
+#: front-page.php
+msgid "Choose destination"
+msgstr ""
+
+#: front-page.php
+msgid "Departure date"
+msgstr ""
+
+#: front-page.php
+msgid "Add date"
+msgstr ""
+
+#: front-page.php
+msgid "Choose date"
+msgstr ""
+
+#: front-page.php
+msgid "Choose departure date"
+msgstr ""
+
+#: front-page.php
+msgid "Previous month"
+msgstr ""
+
+#: front-page.php
+msgid "Next month"
+msgstr ""
+
+#: front-page.php
+msgid "Trip length"
+msgstr ""
+
+#: front-page.php
+msgid "Any length"
+msgstr ""
+
+#: front-page.php
+msgid "Choose trip length"
+msgstr ""
+
+#: front-page.php
+msgid "Travelers"
+msgstr ""
+
+#: front-page.php
+msgid "Decrease travelers"
+msgstr ""
+
+#: front-page.php
+msgid "adults"
+msgstr ""
+
+#: front-page.php
+msgid "Increase travelers"
+msgstr ""
+
+#: front-page.php
+msgid "Instant confirm"
+msgstr ""
+
+#: front-page.php
+msgid "Explore"
+msgstr ""
+
+#: front-page.php
+msgid "Search results"
+msgstr ""
+
+#: front-page.php
+msgid "Trips matching your search"
+msgstr ""
+
+#: front-page.php
+msgid "No trips match those filters yet. Try widening your dates or destination."
+msgstr ""
+
+#: front-page.php
+msgid "Featured departures"
+msgstr ""
+
+#: front-page.php
+msgid "Trips people are booking now"
+msgstr ""
+
+#: front-page.php
+msgid "View all trips"
+msgstr ""
+
+#: front-page.php
+msgid "No trips published yet. Add some under Trips in the dashboard."
+msgstr ""
+
+#: front-page.php
+msgid "Where to next"
+msgstr ""
+
+#: front-page.php
+msgid "No destinations published yet."
+msgstr ""
+
+#: front-page.php
+msgid "Journal"
+msgstr ""
+
+#: front-page.php
+msgid "Stories from the road"
+msgstr ""
+
+#: front-page.php
+msgid "Story"
+msgstr ""
+
+#: front-page.php
+msgid "No stories published yet."
+msgstr ""
+
+#: front-page.php
+msgid "Verified reviews"
+msgstr ""
+
+#: front-page.php
+msgid "Travelers love Farway"
+msgstr ""
+
+#: front-page.php
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: front-page.php
+msgid "View this trip"
+msgstr ""
+
+#: front-page.php
+msgid "Verified reviewer"
+msgstr ""
+
+#: front-page.php
+msgid "No testimonials published yet."
+msgstr ""
+
+#: front-page.php
+msgid "Good to know"
+msgstr ""
+
+#: front-page.php
+msgid "Before you book"
+msgstr ""
+
+#: front-page.php
+msgid "No FAQs published yet."
+msgstr ""
+
+#: front-page.php
+msgid "Human help"
+msgstr ""
+
+#: front-page.php
+msgid "Talk to a travel expert"
+msgstr ""
+
+#: front-page.php
+msgid "Phone"
+msgstr ""
+
+#: front-page.php
+msgid "Email"
+msgstr ""
+
+#: front-page.php
+msgid "Address"
+msgstr ""
+
+#: front-page.php
+msgid "Hours"
+msgstr ""
+
+#: front-page.php
+msgid "Your name"
+msgstr ""
+
+#: front-page.php
+msgid "Email address"
+msgstr ""
+
+#: front-page.php
+msgid "Phone (optional)"
+msgstr ""
+
+#: front-page.php
+msgid "Travelers"
+msgstr ""
+
+#: front-page.php
+msgid "Preferred date"
+msgstr ""
+
+#: front-page.php
+msgid "Tell us what you are dreaming about…"
+msgstr ""
+
+#: front-page.php
+msgid "Send inquiry"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "Breadcrumb"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "Home"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "Trips"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "Up to %d people"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "What's included"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "per person"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "Anything else we should know?"
+msgstr ""
+
+#: single-farway_trip.php
+msgid "Book this trip"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Destinations"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Country"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Region"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Best time"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Currency"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Language"
+msgstr ""
+
+#: single-farway_destination.php
+msgid "Trips here"
+msgstr ""
+
+#: single-farway_faq.php
+msgid "FAQs"
+msgstr ""
+
+#: single.php
+msgid "Pages:"
+msgstr ""
+
+#: archive.php
+msgid "All trips"
+msgstr ""
+
+#: archive.php
+msgid "All destinations"
+msgstr ""
+
+#: archive.php
+msgid "Frequently asked questions"
+msgstr ""
+
+#: archive.php
+msgid "Browse every departure currently available."
+msgstr ""
+
+#: archive.php
+msgid "Find your next place on the map."
+msgstr ""
+
+#: archive.php
+msgid "Answers to the questions travelers ask most."
+msgstr ""
+
+#: archive.php
+msgid "Story"
+msgstr ""
+
+#: archive.php
+msgid "Nothing found."
+msgstr ""
+
+#: search.php
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: search.php
+msgid "Post"
+msgstr ""
+
+#: search.php
+msgid "No results found. Try a different search."
+msgstr ""
+
+#: index.php
+msgid "Read more"
+msgstr ""
+
+#: comments.php
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php
+msgid "Comments are closed."
+msgstr ""
+
+#: 404.php
+msgid "404 — off route"
+msgstr ""
+
+#: 404.php
+msgid "This page has flown away."
+msgstr ""
+
+#: 404.php
+msgid "The page you are looking for does not exist or has moved."
+msgstr ""
+
+#: 404.php
+msgid "Back home"
+msgstr ""

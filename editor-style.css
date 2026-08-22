@@ -1,0 +1,49 @@
+/**
+ * Farway editor styles.
+ *
+ * Aligns the block editor content with the front-end typography.
+ *
+ * @package Farway
+ */
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #1c2b24;
+	background: #efeae0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Fraunces', serif;
+	font-weight: 450;
+	line-height: 1.15;
+	color: #101f30;
+}
+
+a {
+	color: #b23a22;
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-block {
+	max-width: 760px;
+}
+
+.wp-block[data-align="wide"] {
+	max-width: 1080px;
+}
+
+.wp-block[data-align="full"] {
+	max-width: none;
+}
