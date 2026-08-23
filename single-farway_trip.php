@@ -85,7 +85,7 @@ while ( have_posts() ) :
 						</div>
 
 						<form class="inquiry-form" id="inquiry-form">
-							<input type="hidden" name="trip_id" value="<?php the_ID(); ?>">
+							<input type="hidden" name="trip_id" value="<?php echo esc_attr( get_the_ID() ); ?>">
 							<input type="hidden" name="destination" value="<?php echo esc_attr( $dest_name ); ?>">
 							<input type="text" name="name" placeholder="<?php esc_attr_e( 'Your name', 'farway' ); ?>" required>
 							<input type="email" name="email" placeholder="<?php esc_attr_e( 'Email address', 'farway' ); ?>" required>

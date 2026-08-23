@@ -3,7 +3,7 @@ Contributors: mdtanvirahmed
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: e-commerce, custom-menu, one-column, two-columns, custom-colors, featured-images, custom-logo, travel, blog
@@ -63,6 +63,10 @@ Visit Settings > Permalinks and click "Save Changes". WordPress needs a permalin
 flush when a new post type is registered.
 
 == Changelog ==
+
+= 1.2.3 =
+* Self-hosted Google Fonts (Fraunces, IBM Plex Mono, and Work Sans).
+* Escaped the trip ID output in the single trip template.
 
 = 1.2.0 =
 * Added the booking inquiry AJAX handler with nonce verification.

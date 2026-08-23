@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'FARWAY_VERSION', '1.2.0' );
+define( 'FARWAY_VERSION', '1.2.3' );
 
 require_once get_template_directory() . '/inc/customizer.php';
 
@@ -117,9 +117,9 @@ function farway_scripts() {
 
 	wp_enqueue_style(
 		'farway-fonts',
-		'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap',
+		get_template_directory_uri() . '/fonts/fonts.css',
 		array(),
-		null
+		FARWAY_VERSION
 	);
 
 	wp_enqueue_style( 'farway-style', get_stylesheet_uri(), array(), FARWAY_VERSION );
