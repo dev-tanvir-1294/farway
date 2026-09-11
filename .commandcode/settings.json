@@ -1,11 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Shell(curl -s -A \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36\" \"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap\")",
-      "Shell(mkdir -p fonts && cd fonts && cat > /tmp/fonts.txt <<'EOF' https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCBTeO-U.woff2 fraunces-vietnamese.woff2 https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCFTeO-U.woff2 fraunces-latin-ext.woff2 https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeA.woff2 fraunces-latin.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2 ibm-plex-mono-400-cyrillic-ext.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1isq129k.woff2 ibm-plex-mono-400-cyrillic.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iAq129k.woff2 ibm-plex-mono-400-vietnamese.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iEq129k.woff2 ibm-plex-mono-400-latin-ext.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2 ibm-plex-mono-400-latin.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgtIU.woff2 ibm-plex-mono-500-cyrillic-ext.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgtIU.woff2 ibm-plex-mono-500-cyrillic.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgtIU.woff2 ibm-plex-mono-500-vietnamese.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgtIU.woff2 ibm-plex-mono-500-latin-ext.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2 ibm-plex-mono-500-latin.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl1FgtIU.woff2 ibm-plex-mono-600-cyrillic-ext.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlRFgtIU.woff2 ibm-plex-mono-600-cyrillic.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl9FgtIU.woff2 ibm-plex-mono-600-vietnamese.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl5FgtIU.woff2 ibm-plex-mono-600-latin-ext.woff2 https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgg.woff2 ibm-plex-mono-600-latin.woff2 https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_c6Dpp_k.woff2 work-sans-vietnamese.woff2 https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_cqDpp_k.woff2 work-sans-latin-ext.woff2 https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2 work-sans-latin.woff2 EOF while read -r url file; do curl -sSL -o \"$file\" \"$url\"; done < /tmp/fonts.txt ls -la)",
-      "powershell",
-      "Shell(php -l functions.php)",
-      "Shell(php -l single-farway_trip.php)"
+      "Shell(php -l functions.php 2 >& 1)",
+      "Shell(php -l header.php 2 >& 1)",
+      "Shell(php -l footer.php 2 >& 1)",
+      "Shell(php -l index.php 2 >& 1)",
+      "Shell(php -l page.php 2 >& 1)",
+      "Shell(php -l single.php 2 >& 1)",
+      "Shell(type:*)",
+      "Shell(powershell -Command \"(Get-Content 'C:\\Users\\ahmed\\Desktop\\farway.1.2.3\\farway\\languages\\farway.pot') -replace 'Farway 1.1.0', 'Farway 1.2.3' | Set-Content 'C:\\Users\\ahmed\\Desktop\\farway.1.2.3\\farway\\languages\\farway.pot'\")",
+      "Shell(powershell -Command \"(Get-Content 'C:\\Users\\ahmed\\Desktop\\farway.1.2.3\\farway\\languages\\farway.pot') -replace 'Farway 1.2.3', 'Farway 1.2.4' | Set-Content 'C:\\Users\\ahmed\\Desktop\\farway.1.2.3\\farway\\languages\\farway.pot'\")",
+      "Shell(gh:*)",
+      "Shell(curl -s \"https://api.github.com/search/repositories?q=farway+wordpress+theme+user:mdtanvirahmed&per_page=5\")",
+      "Shell(curl -s \"https://api.github.com/search/repositories?q=farway+wordpress+theme&per_page=5\")",
+      "Shell(curl -s \"https://api.github.com/search/repositories?q=farway+theme&per_page=10\")",
+      "Shell(curl -s \"https://api.github.com/users/mdtanvirahmed/repos?per_page=20\")",
+      "Shell(powershell -Command \"Get-ChildItem -Path '.' -Name -File | Sort-Object\")",
+      "Shell(powershell -Command \"Get-ChildItem -Path '.' -Name -Directory | Sort-Object\")",
+      "Shell(powershell -Command \"git clone https://github.com/dev-tanvir-1294/farway.git C:\\Users\\ahmed\\AppData\\Local\\Temp\\farway-push\")",
+      "Shell(powershell -Command \"Copy-Item -Path 'C:\\Users\\ahmed\\Desktop\\farway.1.2.3\\farway\\*' -Destination 'C:\\Users\\ahmed\\AppData\\Local\\Temp\\farway-push\\' -Recurse -Force\")",
+      "Shell(powershell -Command \"Remove-Item -Path 'C:\\Users\\ahmed\\AppData\\Local\\Temp\\farway-push\\.git' -Recurse -Force; git init; git remote add origin https://github.com/dev-tanvir-1294/farway.git\")",
+      "Shell(powershell -Command \"git checkout -b main origin/main; git checkout main\")",
+      "Shell(powershell -Command \"Remove-Item -Path 'C:\\Users\\ahmed\\AppData\\Local\\Temp\\farway-push' -Recurse -Force\")"
     ],
     "deny": [],
     "defaultMode": "default"

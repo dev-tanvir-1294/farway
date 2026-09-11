@@ -17,6 +17,7 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<p class="post-date">
 				<?php echo esc_html( get_the_date() ); ?>
 			</p>
@@ -54,6 +55,8 @@ get_header();
 				comments_template();
 			}
 			?>
+
+			</article>
 
 		<?php endwhile; ?>
 

@@ -20,6 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<?php if ( get_header_image() ) : ?>
+	<div class="custom-header-image"><?php the_header_image_tag(); ?></div>
+<?php endif; ?>
+
 <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'farway' ); ?></a>
 
 <?php if ( is_front_page() ) : ?>
@@ -41,9 +45,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 
 		<nav class="farway-nav" aria-label="<?php esc_attr_e( 'Primary', 'farway' ); ?>">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand">
-				<span class="mark"></span><?php echo esc_html( get_bloginfo( 'name' ) ); ?>
-			</a>
+			<div class="brand">
+				<?php
+				if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+					the_custom_logo();
+				} else {
+					?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-link">
+						<span class="mark"></span><?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+					</a>
+					<?php
+				}
+				?>
+			</div>
 
 			<div class="nav-menu-wrap">
 				<?php
@@ -66,9 +80,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="farway-page-header">
 		<nav class="farway-nav" aria-label="<?php esc_attr_e( 'Primary', 'farway' ); ?>">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand">
-				<span class="mark"></span><?php echo esc_html( get_bloginfo( 'name' ) ); ?>
-			</a>
+			<div class="brand">
+				<?php
+				if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+					the_custom_logo();
+				} else {
+					?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-link">
+						<span class="mark"></span><?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+					</a>
+					<?php
+				}
+				?>
+			</div>
 			<div class="nav-menu-wrap">
 				<?php
 				wp_nav_menu( array(

@@ -17,7 +17,8 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<h1 class="post-title"><?php the_title(); ?></h1>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<h1 class="post-title"><?php the_title(); ?></h1>
 
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'large', array( 'class' => 'post-thumb' ) ); ?>
@@ -26,6 +27,21 @@ get_header();
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
+
+			<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'farway' ),
+				'after'  => '</div>',
+			) );
+			?>
+
+			<?php
+			if ( comments_open() || get_comments_number() ) {
+				comments_template();
+			}
+			?>
+
+			</article>
 
 		<?php endwhile; ?>
 

@@ -18,7 +18,8 @@ while ( have_posts() ) :
 	<div class="farway-content" id="primary">
 		<div class="content-inner content-inner--narrow">
 
-			<nav class="breadcrumb" aria-label="<?php esc_attr_e( 'Breadcrumb', 'farway' ); ?>">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<nav class="breadcrumb" aria-label="<?php esc_attr_e( 'Breadcrumb', 'farway' ); ?>">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Home', 'farway' ); ?></a>
 				<span>/</span>
 				<a href="<?php echo esc_url( get_post_type_archive_link( 'farway_faq' ) ); ?>"><?php esc_html_e( 'FAQs', 'farway' ); ?></a>
@@ -32,13 +33,15 @@ while ( have_posts() ) :
 				<p class="faq-single-topic"><?php echo esc_html( $faq_topic ); ?></p>
 			<?php endif; ?>
 
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-
+		<div class="entry-content">
+			<?php the_content(); ?>
 		</div>
+
+		</article>
+
 	</div>
-	<?php
+</div>
+<?php
 endwhile;
 
 get_footer();

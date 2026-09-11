@@ -17,7 +17,8 @@ while ( have_posts() ) :
 	<div class="farway-content" id="primary">
 		<div class="content-inner content-inner--960">
 
-			<nav class="breadcrumb" aria-label="<?php esc_attr_e( 'Breadcrumb', 'farway' ); ?>">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<nav class="breadcrumb" aria-label="<?php esc_attr_e( 'Breadcrumb', 'farway' ); ?>">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Home', 'farway' ); ?></a>
 				<span>/</span>
 				<a href="<?php echo esc_url( get_post_type_archive_link( 'farway_destination' ) ); ?>"><?php esc_html_e( 'Destinations', 'farway' ); ?></a>
@@ -75,12 +76,14 @@ while ( have_posts() ) :
 						<?php farway_trip_card( $GLOBALS['post'] ); ?>
 					<?php endwhile; ?>
 				</div>
-				<?php wp_reset_postdata(); ?>
-			<?php endif; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php endif; ?>
 
-		</div>
+		</article>
+
 	</div>
-	<?php
+</div>
+<?php
 endwhile;
 
 get_footer();

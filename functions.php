@@ -9,9 +9,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'FARWAY_VERSION', '1.2.3' );
+define( 'FARWAY_VERSION', '1.2.4' );
 
 require_once get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ */
+function farway_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'farway_content_width', 1080 );
+}
+add_action( 'after_setup_theme', 'farway_content_width', 0 );
 
 /**
  * Theme setup.

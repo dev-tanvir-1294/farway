@@ -3,10 +3,10 @@ Contributors: mdtanvirahmed
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Tags: e-commerce, custom-menu, one-column, two-columns, custom-colors, featured-images, custom-logo, travel, blog
+Tags: e-commerce, custom-menu, one-column, two-columns, custom-colors, featured-images, custom-logo, blog
 
 A boarding-pass styled travel agency theme with trips, destinations, testimonials, FAQs, and a booking inquiry flow.
 
@@ -64,6 +64,19 @@ flush when a new post type is registered.
 
 == Changelog ==
 
+= 1.2.4 =
+* Fixed: Added $content_width definition.
+* Fixed: Added wp_link_pages() and comments template to page.php.
+* Fixed: Custom logo now displays in header.
+* Fixed: Custom header image now renders in template.
+* Fixed: Updated readme.txt credits with full attribution.
+* Fixed: Removed invalid theme tag.
+* Fixed: Added article wrapper with post_class() to all templates.
+* Fixed: Added search form to 404 page.
+* Fixed: Email sanitization callback in customizer.
+* Fixed: Pluralization for i18n strings.
+* Fixed: POT file version synchronized.
+
 = 1.2.3 =
 * Self-hosted Google Fonts (Fraunces, IBM Plex Mono, and Work Sans).
 * Escaped the trip ID output in the single trip template.
@@ -85,5 +98,20 @@ flush when a new post type is registered.
 
 == Credits ==
 
-* Google Fonts: Fraunces, IBM Plex Mono, and Work Sans — SIL Open Font License, https://fonts.google.com/
-* No other third-party libraries are bundled or required by the theme.
+* Fraunces Font:
+  Created by Phaedra Charles and Flavia Zimbardi (Undercase Type)
+  License: SIL Open Font License 1.1 (https://openfontlicense.org/)
+  Source: https://fonts.google.com/specimen/Fraunces
+
+* IBM Plex Mono Font:
+  Created by Mike Abbink, Bold Monday
+  License: SIL Open Font License 1.1 (https://openfontlicense.org/)
+  Source: https://fonts.google.com/specimen/IBM+Plex+Mono
+
+* Work Sans Font:
+  Created by Wei Huang
+  License: SIL Open Font License 1.1 (https://openfontlicense.org/)
+  Source: https://fonts.google.com/specimen/Work+Sans
+
+* Screenshot & Artwork:
+  All illustration, icons, and screenshot assets are original creations by Md.Tanvir Ahmed, licensed under GNU GPL v2 or later.

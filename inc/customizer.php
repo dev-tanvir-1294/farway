@@ -122,16 +122,16 @@ function farway_customize_register( $wp_customize ) {
 	) );
 
 	$contact_fields = array(
-		'farway_contact_phone'   => array( __( 'Phone', 'farway' ), '+1 (555) 010-2030' ),
-		'farway_contact_email'   => array( __( 'Email', 'farway' ), 'hello@example.com' ),
-		'farway_contact_address' => array( __( 'Address', 'farway' ), '12 Harbor Street, Suite 40' ),
-		'farway_contact_hours'   => array( __( 'Hours', 'farway' ), 'Mon–Sat, 9:00–18:00' ),
+		'farway_contact_phone'   => array( __( 'Phone', 'farway' ), '+1 (555) 010-2030', 'sanitize_text_field' ),
+		'farway_contact_email'   => array( __( 'Email', 'farway' ), 'hello@example.com', 'sanitize_email' ),
+		'farway_contact_address' => array( __( 'Address', 'farway' ), '12 Harbor Street, Suite 40', 'sanitize_text_field' ),
+		'farway_contact_hours'   => array( __( 'Hours', 'farway' ), 'Mon–Sat, 9:00–18:00', 'sanitize_text_field' ),
 	);
 
 	foreach ( $contact_fields as $key => $field ) {
 		$wp_customize->add_setting( $key, array(
 			'default'           => $field[1],
-			'sanitize_callback' => 'sanitize_text_field',
+			'sanitize_callback' => $field[2],
 		) );
 		$wp_customize->add_control( $key, array(
 			'label'   => $field[0],

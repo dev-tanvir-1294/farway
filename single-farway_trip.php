@@ -20,7 +20,8 @@ while ( have_posts() ) :
 	<div class="farway-content" id="primary">
 		<div class="content-inner content-inner--960">
 
-			<nav class="breadcrumb" aria-label="<?php esc_attr_e( 'Breadcrumb', 'farway' ); ?>">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<nav class="breadcrumb" aria-label="<?php esc_attr_e( 'Breadcrumb', 'farway' ); ?>">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Home', 'farway' ); ?></a>
 				<span>/</span>
 				<a href="<?php echo esc_url( get_post_type_archive_link( 'farway_trip' ) ); ?>"><?php esc_html_e( 'Trips', 'farway' ); ?></a>
@@ -48,7 +49,7 @@ while ( have_posts() ) :
 							<span><?php echo esc_html( ucfirst( $meta['difficulty'] ) ); ?></span>
 						<?php endif; ?>
 						<?php if ( $meta['group_size'] ) : ?>
-							<span><?php printf( esc_html__( 'Up to %d people', 'farway' ), (int) $meta['group_size'] ); ?></span>
+							<span><?php printf( esc_html( _n( 'Up to %d person', 'Up to %d people', (int) $meta['group_size'], 'farway' ) ), (int) $meta['group_size'] ); ?></span>
 						<?php endif; ?>
 					</div>
 
@@ -101,6 +102,8 @@ while ( have_posts() ) :
 			</div>
 
 		</div>
+
+		</article>
 	</div>
 	<?php
 endwhile;

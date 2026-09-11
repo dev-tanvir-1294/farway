@@ -55,7 +55,7 @@ $has_search = isset( $_GET['from'] ) || isset( $_GET['trip_length'] ) || isset( 
 							<div class="pass-title"><?php esc_html_e( 'Book a trip', 'farway' ); ?></div>
 						</div>
 						<div class="pass-ref">
-							REF
+							<?php esc_html_e( 'REF', 'farway' ); ?>
 							<b>FW-<?php echo esc_html( wp_rand( 1000, 9999 ) ); ?>-KX</b>
 						</div>
 					</div>
@@ -162,7 +162,7 @@ $has_search = isset( $_GET['from'] ) || isset( $_GET['trip_length'] ) || isset( 
 								<label for="travelersInput"><?php esc_html_e( 'Travelers', 'farway' ); ?></label>
 								<div class="val val-stepper">
 									<button type="button" id="minus" aria-label="<?php esc_attr_e( 'Decrease travelers', 'farway' ); ?>">&minus;</button>
-									<span id="travelerLabel"><?php echo esc_html( isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2 ); ?> <?php esc_html_e( 'adults', 'farway' ); ?></span>
+									<span id="travelerLabel"><?php echo esc_html( isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2 ); ?> <?php echo esc_html( _n( '%s adult', '%s adults', isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2, 'farway' ) ); ?></span>
 									<button type="button" id="plus" aria-label="<?php esc_attr_e( 'Increase travelers', 'farway' ); ?>">+</button>
 									<input type="hidden" name="travelers" id="travelersInput" value="<?php echo esc_attr( isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2 ); ?>">
 								</div>
