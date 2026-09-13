@@ -14,8 +14,9 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 	$meta = farway_trip_meta( get_the_ID() );
-	$dest_id   = $meta['destination'];
-	$dest_name = $dest_id ? get_the_title( $dest_id ) : '';
+	$dest_id    = $meta['destination'];
+	$dest_name  = $dest_id ? get_the_title( $dest_id ) : '';
+	$group_size = (int) $meta['group_size'];
 	?>
 	<div class="farway-content" id="primary">
 		<div class="content-inner content-inner--960">
@@ -48,8 +49,8 @@ while ( have_posts() ) :
 						<?php if ( $meta['difficulty'] ) : ?>
 							<span><?php echo esc_html( ucfirst( $meta['difficulty'] ) ); ?></span>
 						<?php endif; ?>
-						<?php if ( $meta['group_size'] ) : ?>
-							<span><?php printf( esc_html( _n( 'Up to %d person', 'Up to %d people', (int) $meta['group_size'], 'farway' ) ), (int) $meta['group_size'] ); ?></span>
+						<?php if ( $group_size ) : ?>
+							<span><?php echo esc_html( sprintf( _n( 'Up to %d person', 'Up to %d people', $group_size, 'farway' ), $group_size ) ); ?></span>
 						<?php endif; ?>
 					</div>
 

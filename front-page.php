@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 
 $has_search = isset( $_GET['from'] ) || isset( $_GET['trip_length'] ) || isset( $_GET['destination'] ) || isset( $_GET['depart'] ) || isset( $_GET['travelers'] );
+$travelers  = isset( $_GET['travelers'] ) ? max( 1, absint( wp_unslash( $_GET['travelers'] ) ) ) : 2;
 ?>
 
 		<main class="farway-main" id="primary">
@@ -162,7 +163,7 @@ $has_search = isset( $_GET['from'] ) || isset( $_GET['trip_length'] ) || isset( 
 								<label for="travelersInput"><?php esc_html_e( 'Travelers', 'farway' ); ?></label>
 								<div class="val val-stepper">
 									<button type="button" id="minus" aria-label="<?php esc_attr_e( 'Decrease travelers', 'farway' ); ?>">&minus;</button>
-									<span id="travelerLabel"><?php echo esc_html( isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2 ); ?> <?php echo esc_html( _n( '%s adult', '%s adults', isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2, 'farway' ) ); ?></span>
+									<span id="travelerLabel"><?php echo esc_html( sprintf( _n( '%s adult', '%s adults', $travelers, 'farway' ), $travelers ) ); ?></span>
 									<button type="button" id="plus" aria-label="<?php esc_attr_e( 'Increase travelers', 'farway' ); ?>">+</button>
 									<input type="hidden" name="travelers" id="travelersInput" value="<?php echo esc_attr( isset( $_GET['travelers'] ) ? max( 1, absint( $_GET['travelers'] ) ) : 2 ); ?>">
 								</div>
